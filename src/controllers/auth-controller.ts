@@ -14,7 +14,7 @@ interface RequestBody {
 const signupController = async (req: Request<object, object, RequestBody>, res: Response) => {
     try {
         const { body } = req;
-        console.log(body)
+        // console.log(body)
         const { error } = authSignupValidationSchema.validate(body)
         if (error) {
             const message = error.details.map(e => e.message).join(", ")
