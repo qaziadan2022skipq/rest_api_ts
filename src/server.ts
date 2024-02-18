@@ -3,10 +3,11 @@ import connectDB from "./database/mongo";
 import app from "./app"
 
 const init = async () => {
+    const port = process.env.port! || 3000
     const server = http.createServer(app);
     await connectDB()
-    server.listen(process.env.PORT! || 3000, () => {
-        console.info("Server running on port 3000");
+    server.listen(port, () => {
+        console.info(`Server running on port ${port}`);
     });
 }
 
