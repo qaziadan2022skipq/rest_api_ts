@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "e5a19f0c-0587-4757-86de-0f298d3a0619",
+		"name": "rest_api_ts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"id": "81450c02-2123-4ae4-ab50-a55d5e7d5019",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"adan_qazi\",\r\n    \"email\": \"qaziadanhidayat@gmail.com\",\r\n    \"password\": \"adan_qazi\",\r\n    \"confirmPassword\": \"adan_qazi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/v1/auth/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"id": "87f4390c-46c7-4889-8e7a-99b28718dd60",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImFkYW5fcWF6aSIsImlhdCI6MTcwODI0NTA5NCwiZXhwIjoxNzA4MjczODk0fQ.21z5Z3MXvLe7rzp49agCM5CjmeASUwEz-Jj4y9K6rEQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"adan.qazi@yahoo.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/v1/update-user"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"id": "6ee63f9a-3a97-4e12-af48-d2862bddc188",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"qaziadanhidayat@gmail.com\",\r\n    \"password\": \"adan_qazi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/v1/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"id": "b4c9c2b8-e0c5-4f1d-bdea-60e130e528fe",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImFkYW5fcWF6aSIsImlhdCI6MTcwODI0NDkwOCwiZXhwIjoxNzA4MjczNzA4fQ.h9ILGkNAHtzSG5Vf6IQ9NIE_xElBM6wmY4imMWDn1PQ",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:5000/api/v1/delete-user"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "http:localhost:3000/api/v1"
+		},
+		{
+			"key": "baseURLNew",
+			"value": "http://localhost:3000/"
+		}
+	]
+}
