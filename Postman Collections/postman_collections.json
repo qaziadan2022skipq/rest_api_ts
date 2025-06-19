@@ -95,6 +95,28 @@
 				"url": "http://localhost:5000/api/v1/delete-user"
 			},
 			"response": []
+		},
+		{
+			"name": "Make.com",
+			"id": "29062125-294d-4887-bb5f-e5c2668add63",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fullname\": \"Qazi Adan\",\n    \"email\": \"qazi@gmail.com\",\n    \"message\": \"Hello\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://hook.us2.make.com/27rahhv7e3ze7vsyn135v21917ss5rwm"
+			},
+			"response": []
 		}
 	],
 	"variable": [
